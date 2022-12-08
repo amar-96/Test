@@ -1,0 +1,7 @@
+raft_journal_entry.txt:
+  touch README.md
+  
+  echo $(date)
+readme.txt: README.txt
+  echo "This journal contains the following number of entries:" > readme.txt
+  wc -l guessinggame.sh | egrep -o "[0-9]+" >> readme.txt
